@@ -3,7 +3,7 @@ input {
     margin: 0.8rem;
     border-radius: 2rem;
    border: none;
-    width: 20vw;
+    width: 21vw;
 }
 
 .nav {
@@ -15,6 +15,7 @@ input {
 .search img {
     height: 1.5rem;
     margin: 0.8rem;
+    margin-top: 1rem;
     border-radius: 50%;
     cursor: pointer;
     max-width: 100%;
@@ -33,7 +34,7 @@ nav {
 }
 
 .city-details {
-    display: flex;
+    display: grid;
    
     gap: 1.3vh;
     
@@ -54,9 +55,10 @@ margin: auto;
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
  
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1000px) {
     .container {
         width: 80vw;
     }
@@ -73,4 +75,14 @@ margin: auto;
     input{
         width: 40vw;
     }
+}
+.body{
+    display: non;
+}
+body{
+    background-color: black;
+}
+
+*{
+    font-family: sans-serif;
 }
