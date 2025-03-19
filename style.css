@@ -1,20 +1,30 @@
 input {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 33px;
-    border: 1px solid black;
-  }
-
-
-img {
-    height: 30px;
-    margin: 10px;
-    border-radius: 100%;
- 
-    max-width: 100%; 
+    padding: 0.8rem;
+    margin: 0.8rem;
+    border-radius: 2rem;
+   border: none;
+    width: 20vw;
 }
 
-nav{
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search img {
+    height: 1.5rem;
+    margin: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 100%;
+   
+    padding: 0.8rem;
+    background: white;
+}
+
+
+nav {
     display: flex;
 }
 
@@ -23,14 +33,44 @@ nav{
 }
 
 .city-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-top: 10px;
+    display: flex;
+   
+    gap: 1.3vh;
+    
+    margin-top: 1.9vh;
+    justify-content:center;
+    
 }
 
-.container{
+.container {
     height: 80vh;
-    width: 70vw;
-    border: 2px solid black;
+    width: 30vw;
+   border-radius: 22px;
+    background:linear-gradient(to bottom,aquamarine,rgb(42, 181, 227));
+margin: auto;
+   margin-top: 10vh;
+}
+.main-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ 
+}
+@media all and (max-width: 850px) {
+    .container {
+        width: 80vw;
+    }
+    .city-details {
+        display: grid;
+        gap: 1.3vh;
+        justify-content: center;
+    }
+    .main-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 40vw;
+    }
 }
