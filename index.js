@@ -28,8 +28,7 @@ async function fetchWeather(city) {
                 <p> <img src="weather-app.png" alt=""> Weather: ${data.weather[0].description}</p>
                
                 <p><img src="icons8-humidity-50.png" alt=""> Humidity: ${data.main.humidity}%</p>
-            </div>
-            <div>
+            
                 <p><img src="icons8-pressure-50.png" alt=""> Pressure: ${data.main.pressure} hPa</p>
                 
                 <p><img src="icons8-wind-48.png" alt=""> Wind Speed: ${data.wind.speed} m/s</p>
