@@ -25,16 +25,14 @@ async function fetchWeather(city) {
         cityIcon.alt = data.weather[0].description;
         cityDetails.innerHTML = `
             <div>
-                <p>Weather: ${data.weather[0].description}</p>
-                </div>
-                <div>
-                <p>Humidity: ${data.main.humidity}%</p>
+                <p> <img src="weather-app.png" alt=""> Weather: ${data.weather[0].description}</p>
+               
+                <p><img src="icons8-humidity-50.png" alt=""> Humidity: ${data.main.humidity}%</p>
             </div>
             <div>
-                <p>Pressure: ${data.main.pressure} hPa</p>
-                </div>
-                <div>
-                <p>Wind Speed: ${data.wind.speed} m/s</p>
+                <p><img src="icons8-pressure-50.png" alt=""> Pressure: ${data.main.pressure} hPa</p>
+                
+                <p><img src="icons8-wind-48.png" alt=""> Wind Speed: ${data.wind.speed} m/s</p>
             </div>
         `;
     } catch (error) {

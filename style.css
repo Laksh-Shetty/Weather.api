@@ -1,3 +1,7 @@
+*{
+    font-family: sans-serif;
+    font-size: large;
+}
 input {
     padding: 0.8rem;
     margin: 0.8rem;
@@ -10,6 +14,11 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+img{
+    height: 6vh;
+    
+    margin-right: 20px;
 }
 
 .search img {
@@ -36,20 +45,21 @@ nav {
 .city-details {
     display: grid;
    
-    gap: 1.3vh;
+    gap: 0.3vh;
     
-    margin-top: 1.9vh;
+    margin-top: 0.5vh;
     justify-content:center;
+    
     
 }
 
 .container {
-    height: 80vh;
+    height: 90vh;
     width: 30vw;
    border-radius: 22px;
     background:linear-gradient(to bottom,aquamarine,rgb(42, 181, 227));
 margin: auto;
-   margin-top: 10vh;
+margin-top: 5vh;
 }
 .main-container {
     display: grid;
@@ -85,4 +95,10 @@ body{
 
 *{
     font-family: sans-serif;
+}
+.city-name{
+    font: 2em sans-serif;
+}
+.city-icon{
+    height: 10vh;
 }
